@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taskify – To-Do List App</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <span>Taskify</span>
+    </div>
+    <button class="dark-toggle" aria-label="Toggle Dark Mode">🌙 Dark Mode</button>
+  </header>
+  <!-- Main App -->
+  <main>
+    <h2>Organize Your Day with Taskify ✅</h2>
+    <!-- Task Input Form -->
+    <form class="task-form" id="taskForm" autocomplete="off">
+      <label for="taskInput" class="sr-only">Task</label>
+      <input type="text" id="taskInput" placeholder="Enter task..." required />
+      <label for="description" class="sr-only">Description</label>
+      <input type="text" id="description" placeholder="Description (optional)" />
+      <label for="category" class="sr-only">Category</label>
+      <select id="category">
+        <option value="work">Work</option>
+        <option value="personal">Personal</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="priority" class="sr-only">Priority</label>
+      <select id="priority">
+        <option value="high">High</option>
+        <option value="medium" selected>Medium</option>
+        <option value="low">Low</option>
+      </select>
+      <label for="dueDate" class="sr-only">Due Date</label>
+      <input type="date" id="dueDate"/>
+      <button id="addBtn" type="submit">Add Task</button>
+    </form>
+    <!-- Search, Filter & Sort -->
+    <div class="filter-bar">
+      <input type="text" id="search" placeholder="🔍 Search task..."/>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+        <option value="overdue">Overdue</option>
+      </select>
+      <select id="sort">
+        <option value="default">Sort By</option>
+        <option value="due">Due Date</option>
+        <option value="priority">Priority</option>
+        <option value="category">Category</option>
+      </select>
+    </div>
+    <!-- Task Stats -->
+    <div class="stats">
+      <span id="totalTasks">Total: 0</span> | 
+      <span id="completedTasks">Completed: 0</span> | 
+      <span id="pendingTasks">Pending: 0</span>
+      <button id="clearAll" class="clear-all">🧹 Clear All</button>
+      <button id="undoDelete" class="undo-delete" aria-label="Undo Delete" style="display:none;">↩️ Undo</button>
+    </div>
+    <!-- Task List -->
+    <ul class="task-list" id="taskList"></ul>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
