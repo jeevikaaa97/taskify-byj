@@ -28,7 +28,7 @@ body.dark {
 /* Header */
 header {
   background: var(--primary);
-  color: white;
+  color: cream;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
