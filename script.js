@@ -38,7 +38,7 @@ function renderTasks(){
     return matchesSearch && matchesFilter;
   });
 
-  // Sort Logic
+  
   if(sort==="due"){
     filtered.sort((a,b)=>(a.due||"").localeCompare(b.due||""));
   } else if(sort==="priority"){
@@ -224,14 +224,6 @@ clearAllBtn.addEventListener("click",()=>{
   }
 });
 
-// DARK MODE
-darkToggle.addEventListener("click",()=>{
-  document.body.classList.toggle("dark");
-  localStorage.setItem("darkMode",document.body.classList.contains("dark"));
-});
-if(localStorage.getItem("darkMode")==="true"){
-  document.body.classList.add("dark");
-}
 
 // =============================
 // Reminders/Notifications

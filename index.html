@@ -7,17 +7,16 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <!-- Header -->
+ 
   <header>
     <div class="logo">
       <span>Taskify</span>
     </div>
     <button class="dark-toggle" aria-label="Toggle Dark Mode">🌙 Dark Mode</button>
   </header>
-  <!-- Main App -->
-  <main>
+   <main>
     <h2>Organize Your Day with Taskify ✅</h2>
-    <!-- Task Input Form -->
+    
     <form class="task-form" id="taskForm" autocomplete="off">
       <label for="taskInput" class="sr-only">Task</label>
       <input type="text" id="taskInput" placeholder="Enter task..." required />
@@ -39,7 +38,7 @@
       <input type="date" id="dueDate"/>
       <button id="addBtn" type="submit">Add Task</button>
     </form>
-    <!-- Search, Filter & Sort -->
+    
     <div class="filter-bar">
       <input type="text" id="search" placeholder="🔍 Search task..."/>
       <select id="filter">
@@ -55,7 +54,7 @@
         <option value="category">Category</option>
       </select>
     </div>
-    <!-- Task Stats -->
+    
     <div class="stats">
       <span id="totalTasks">Total: 0</span> | 
       <span id="completedTasks">Completed: 0</span> | 
@@ -63,7 +62,7 @@
       <button id="clearAll" class="clear-all">🧹 Clear All</button>
       <button id="undoDelete" class="undo-delete" aria-label="Undo Delete" style="display:none;">↩️ Undo</button>
     </div>
-    <!-- Task List -->
+    
     <ul class="task-list" id="taskList"></ul>
   </main>
   <script src="script.js"></script>

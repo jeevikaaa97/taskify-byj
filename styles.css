@@ -29,14 +29,14 @@ body.dark {
 header {
   background: var(--primary);
   color: white;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 2px 10px rgba(100,99,255,0.04);
 }
 .logo {
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: bold;
   letter-spacing: 1px;
   color: white;
