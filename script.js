@@ -38,7 +38,7 @@ function renderTasks(){
     return matchesSearch && matchesFilter;
   });
 
-  // Sort Logic
+  // Sort Logic and add
   if(sort==="due"){
     filtered.sort((a,b)=>(a.due||"").localeCompare(b.due||""));
   } else if(sort==="priority"){
